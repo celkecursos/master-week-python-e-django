@@ -147,3 +147,13 @@ Enviar os commits locais para um repositório remoto.
 ´´´
 git push -u origin main
 ´´´
+
+Remover o arquivo do cache do GIT.
+´´´
+git rm --cached db.sqlite3
+´´´
+
+Remover o diretório do cache do GIT.
+´´´
+git rm --cached -r admin/__pycache__/
+´´´
