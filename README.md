@@ -3,6 +3,7 @@
 * Python 3 ou superior - Conferir a versão: python --version
 * Django 5 ou superior - Conferir a versão: django-admin --version
 * MySQL 8 ou superior - Conferir a versão: mysql --version
+* GIT - Conferir a instalação: git -v
 
 ## Como rodar o projeto baixado
 
@@ -110,6 +111,37 @@ Password (again): 123456A#
 Acessar o sistema administrativo padrão do Django.
 ´´´
 http://127.0.0.1:8000/admin
+´´´
+
+Criar o app.
+´´´
+python manage.py startapp nome-do-app
+´´´
+´´´
+python manage.py startapp travel_packages
+´´´
+
+Instalar a biblioteca para trabalhar com o campo ImageField.
+´´´
+python -m pip install Pillow
+´´´
+
+Verificar se o Pillow foi instalada corretamente.
+´´´
+python -m pip show Pillow
+´´´
+
+Criar a migrations.
+´´´
+python manage.py makemigrations nome-do-app --name nome-da-migrations
+´´´
+´´´
+python manage.py makemigrations travel_packages --name travel_packages
+´´´
+
+Executar as migrations para criar as tabelas.
+´´´
+python manage.py migrate
 ´´´
 
 ## Como usar o GitHub
