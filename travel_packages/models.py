@@ -11,6 +11,8 @@ class TravelPackage(models.Model):
 
     image = models.ImageField(upload_to='travel_packages/', verbose_name="Imagem")
 
+    description = models.TextField(verbose_name="Descrição", blank=True, null=True)
+
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Data de Criação")
     
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Data de Edição")

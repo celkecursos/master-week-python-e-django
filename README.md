@@ -144,6 +144,16 @@ Executar as migrations para criar as tabelas.
 python manage.py migrate
 ´´´
 
+Instalar o Bootstrap.
+´´´
+pip install django-bootstrap-v5
+´´´
+
+Instalar o django-tinymce.
+´´´
+pip install django-tinymce
+´´´
+
 ## Como usar o GitHub
 Inicializar um novo repositorio GIT.
 ´´´
